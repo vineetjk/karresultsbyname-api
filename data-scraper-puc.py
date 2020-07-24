@@ -2,13 +2,17 @@ import requests
 import json
 import unicodedata
 from bs4 import BeautifulSoup as bs
+
+data = dict()
+raw_data_lst = list()
+
+
 result = requests.post(
-    "http://karresults.nic.in/resPUC_2020.asp", data={'reg': 100001})
+    "http://karresults.nic.in/resPUC_2020.asp", data={'reg': 100006})
 
 soup = bs(result.content, 'html.parser')
 tags = soup('td')
-data = dict()
-raw_data_lst = list()
+
 
 for t in tags:
     d = unicodedata.normalize("NFKD", str(t.string).strip())
@@ -35,5 +39,11 @@ if len(raw_data_lst)!=0:
 else : print("Invalid Entry")
 print(data)
 
-with open('docs/data.json','w') as outfile:
-    json.dump(data,outfile)
+with open('docs/data.json','r+') as outputfile:
+    try:
+        new_data = json.load(outputfile)
+        new_data.update(data)
+        outputfile.seek(0)
+        json.dump(new_data,outputfile)
+    except:
+        json.dump(data,outputfile)
