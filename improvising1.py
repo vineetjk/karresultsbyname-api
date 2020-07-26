@@ -8,7 +8,7 @@ start_time = time.time()
 print("Application Started...   " + str(time.time()))
 data = dict()
 raw_data_lst = list()
-u = 100001
+u = 102684
 print("Collecting Data Please wait...   " + str(time.time()))
 while u <183300:
     print(u)
@@ -63,7 +63,7 @@ while u <183300:
 
 
 
-    with open('docs/data1.json','r+') as outputfile:
+    with open('docs/data2.json','r+') as outputfile:
         try:
             new_data = json.load(outputfile)
             new_data.update(data)
