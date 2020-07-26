@@ -19,6 +19,7 @@ for t in tags:
     if len(d) != 0:
         raw_data_lst.append(d)
 print(raw_data_lst)
+
 if len(raw_data_lst)!=0:
     
     data[raw_data_lst[3]] = {
@@ -47,3 +48,4 @@ with open('docs/data.json','r+') as outputfile:
         json.dump(new_data,outputfile)
     except:
         json.dump(data,outputfile)
+
