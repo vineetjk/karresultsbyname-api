@@ -10,7 +10,8 @@ data = dict()
 raw_data_lst = list()
 u = 100001
 print("Collecting Data Please wait...   " + str(time.time()))
-while u <100500:
+while u <183300:
+    print(u)
     data.clear()
     raw_data_lst.clear()
     result = requests.post(
