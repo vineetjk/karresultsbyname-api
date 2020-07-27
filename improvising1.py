@@ -8,7 +8,7 @@ start_time = time.time()
 print("Application Started...   " + str(time.time()))
 data = dict()
 raw_data_lst = list()
-u = 102684
+u = 126716
 print("Collecting Data Please wait...   " + str(time.time()))
 while u <183300:
     print(u)
