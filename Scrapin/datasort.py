@@ -3,11 +3,14 @@ import json
 
 
 
-with open('docs/data.json','r+') as inputFile:
+with open('docs/data1.json','r') as inputFile:
     data = json.load(inputFile)
     d=[*data.values()]
-    export = "const results = " + str(d)
+    
 
 
-fh = open('../data/sample-data.js','w+')
-fh.write(export)
+
+
+
+with open('../data/data2.js','w') as outputfile:
+    json.dump(d,outputfile,indent=4)

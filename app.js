@@ -1,4 +1,4 @@
-const results = require('./data/sample-data.js');
+const results = require('./data/data2.js');
 
 const express = require('express');
 
