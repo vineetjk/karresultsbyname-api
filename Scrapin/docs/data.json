@@ -1,0 +1,32 @@
+{
+    "100001": {
+        "Name": "ABHISHEK",
+        "reg_num": "100001",
+        "ENGLISH": "53 P",
+        "HINDI": "73 P",
+        "PHYSICS": "58 P",
+        "CHEMISTRY": "64 P",
+        "MATHEMATICS": "52 P",
+        "BIOLOGY": "61 P",
+        "CoreSubTotal": "235",
+        "GRAND TOTAL MARKS": "361",
+        "Percentage": "60.17%",
+        "CorePercentage": "58.75%",
+        "FINAL RESULT": "First Class"
+    },
+    "100006": {
+        "Name": "AINAN SAFA",
+        "reg_num": "100006",
+        "ENGLISH": "81 P",
+        "HINDI": "91 P",
+        "PHYSICS": "89 P",
+        "CHEMISTRY": "83 P",
+        "MATHEMATICS": "95 P",
+        "BIOLOGY": "95 P",
+        "CoreSubTotal": "362",
+        "GRAND TOTAL MARKS": "534",
+        "Percentage": "89.0%",
+        "CorePercentage": "90.5%",
+        "FINAL RESULT": "Distinction"
+    }
+}
