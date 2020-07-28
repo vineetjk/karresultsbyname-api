@@ -1,8 +1,9 @@
 import json
 fname = 'docs/data2.json'
-fh = open(fname)
-print(fh)
 
-data = json.load(fh)
-values = data.keys()
+
+with open('docs/data2.json','r+') as outputfile:
+        try:
+            new_data = json.load(outputfile)
+            
 print(data)
